@@ -1,22 +1,63 @@
-# Client Demo
+# HFU Enterprise — Homepage Redesign Concept
 
-A lightweight, responsive client-facing demo website built with plain HTML, CSS, and JavaScript.
+A responsive homepage concept for **HFU Enterprise Ltd**, created for the website redesign contest brief.
 
-## Files
+## Design approach
 
-- `index.html` — page structure and content
-- `styles.css` — responsive visual design
-- `script.js` — small interactive demo modal
-- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
+The concept is intentionally conversion-led rather than a generic logistics template. The homepage uses:
 
-## Publish with GitHub Pages
+- A clear hero message focused on UK logistics reliability and delivery speed.
+- Strong primary actions for **Get a Quote** and **Book a Delivery**.
+- HFU's existing brand colours, logo and fleet imagery.
+- Service cards for same-day, scheduled, overnight, international, warehousing, pallet delivery and home moves.
+- A dedicated fleet section with real vehicle categories and capacities from the current HFU website.
+- A prominent quote form placed close to the fleet section.
+- UK coverage and business-logistics sections to support both B2C and B2B enquiries.
+- Trust signals, customer feedback, company experience and job-volume statistics.
+- A simple four-step conversion journey: quote → booking → collection → delivery.
+- Mobile navigation and a persistent mobile call/quote bar.
 
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Pushes to `main` will deploy automatically.
+## Recommended production technology
 
-Expected public URL:
+For the complete website I would recommend **Next.js + a headless CMS** (such as Sanity or WordPress used headlessly) for a fast, SEO-friendly and scalable build.
 
-`https://haroonzia1234.github.io/client-demo/`
+That production stack would support:
 
-> The company names, metrics, and testimonial on this demo are sample content and should be replaced before presenting as a real case study.
+- Individual SEO landing pages for services and UK locations
+- Structured data / schema
+- Optimised images and Core Web Vitals
+- Quote/enquiry form integrations
+- CRM or email routing
+- Analytics and conversion tracking
+- Reusable page sections for future expansion
+
+For this contest demo, plain **HTML, CSS and JavaScript** are used so it loads quickly and can be hosted easily on GitHub Pages.
+
+## Demo notes
+
+The project currently includes:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `.github/workflows/pages.yml`
+
+The contact/quote form is a front-end demonstration. A production build should connect the form to HFU's preferred email, CRM or booking workflow.
+
+## Content source
+
+Company information, services, fleet categories, contact details and customer feedback are based on the existing HFU Enterprise website:
+
+https://hfuenterprise.com/
+
+## GitHub Pages
+
+To publish:
+
+1. Open **Settings → Pages**.
+2. Set **Build and deployment → Source** to **GitHub Actions**.
+3. The included workflow will publish the site from `main`.
+
+Expected URL:
+
+https://haroonzia1234.github.io/client-demo/
